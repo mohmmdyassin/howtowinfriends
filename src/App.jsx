@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight, Menu, X } from "lucide-react"
 
@@ -354,7 +356,7 @@ export default function App() {
 
     window.addEventListener("keydown", handleKeyDown)
     return () => window.removeEventListener("keydown", handleKeyDown)
-  }, [currentPage])
+  })
 
   return (
     <>
